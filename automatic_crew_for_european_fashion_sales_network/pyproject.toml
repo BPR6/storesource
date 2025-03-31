@@ -1,0 +1,20 @@
+[project]
+name = "automatic_crew_for_european_fashion_sales_network"
+version = "0.1.0"
+description = "automatic_crew_for_european_fashion_sales_network using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+automatic_crew_for_european_fashion_sales_network = "automatic_crew_for_european_fashion_sales_network.main:run"
+run_crew = "automatic_crew_for_european_fashion_sales_network.main:run"
+train = "automatic_crew_for_european_fashion_sales_network.main:train"
+replay = "automatic_crew_for_european_fashion_sales_network.main:replay"
+test = "automatic_crew_for_european_fashion_sales_network.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
